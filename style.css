@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d1b48;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.logo h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.logo h1 span {
+  color: #c33c54;
+}
+
+.navbar {
+  width: 1080px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffffe6;
+  font-size: 1.1rem;
+}
+
+.navbar ul li a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #c33c54;
+}
+
+.navbar ul li a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #c33c54;
+}
+
+.btn_primary {
+  margin: 0 1rem;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 4rem;
+  border-style: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background: #c33c54;
+  color: #ffffff;
+}
+
+.btn_primary:hover {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #c33c54;
+}
+
+.btn_secondary {
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background: transparent;
+  border: 2px solid #c33c54;
+  color: #ffffff;
+}
+
+.btn_secondary:hover {
+  background: #c33c54;
+  color: #ffffff;
+}
+
+/* For Responsive Design */
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    width: 850px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navlink {
+    flex-direction: column;
+  }
+
+  .navlink .btn {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navlink {
+    flex-direction: column;
+  }
+
+  .navlink .btn {
+    margin-top: 1rem;
+  }
+}
